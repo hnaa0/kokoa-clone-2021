@@ -1,5 +1,10 @@
 .user-component {
   justify-content: space-between;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.user-component:hover {
+  background-color: rgba(229, 252, 194, 0.3);
 }
 
 .user-component,
@@ -27,7 +32,7 @@
 }
 
 .user-component__subtitle i {
-  color: tomato;
+  color: var(--turquoise);
   margin-left: 5px;
 }
 
@@ -59,5 +64,18 @@
 }
 
 .user-component--chat {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.user-component__friends {
+  margin-bottom: 20px;
+}
+
+.user-component__text > div {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__text > div > h4 {
+  margin-right: 5px;
 }
